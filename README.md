@@ -10,3 +10,5 @@
 | user_agent | 접속 환경(브라우저, OS, 디바이스 정보) | 모바일/PC 비중 파악 → 모바일 UI/UX 개선 전략 수립 |
 
 ![data.jpg](https://github.com/blessing1818/Web/blob/main/data.jpg)
+
+https://willowy-axolotl-591600.netlify.app/
