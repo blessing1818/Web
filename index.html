@@ -1,13 +1,46 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Simple Product</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="container">
+      <header class="header">
+        <h1>Simple Product</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="product-img">
+          <img src="public/S.jpg" alt="White Shirt" style="width:260px; height:auto; border-radius:12px; box-shadow:0 1px 8px #0001; background:#f6f6f6;" />
+        </div>
+        <div class="product-info">
+          <h2>T-Shirt</h2>
+          <p class="price">$19.99</p>
+          <div class="actions">
+            <button id="addCartBtn" class="cart-btn">Add to Cart</button>
+            <button id="purchaseBtn" class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+        <section class="activity">
+          <h3>User Activity</h3>
+          <table id="activityTable">
+            <thead>
+              <tr><th>Type</th><th>Time</th></tr>
+            </thead>
+            <tbody>
+              <!-- 활동 내역 JS로 추가 -->
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
