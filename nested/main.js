@@ -18,37 +18,49 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 function getDummyProducts() {
   // 첫 번째 셔츠, 두 번째 B.jpg 이미지
+  // 9칸(3x3) 그리드, 첫 번째만 셔츠 이미지, 나머지는 빈 칸
   return [
     {
       name: 'T-Shirt',
       image: '../public/S.jpg',
       id: 1
     },
-    {
-      name: 'Black Shirt',
-      image: '../public/B.jpg',
-      id: 2
-    },
-    {
-      name: 'White Shirt',
-      image: '../public/W.jpg',
-      id: 3
-    },
-    {
-      name: 'Orange Shirt',
-      image: '../public/O.jpg',
-      id: 4
-    },
-    {
-      name: 'Yellow Shirt',
-      image: '../public/Y.jpg',
-      id: 5
-    },
-    {
-      name: 'Red Shirt',
-      image: '../public/R.jpg',
-      id: 6
-    }
+      {
+        name: 'Orange Shirt',
+        image: '../public/O.jpg',
+        id: 2
+      },
+      {
+        name: 'Yellow Shirt',
+        image: '../public/Y.jpg',
+        id: 3
+      },
+      {
+        name: 'Blue Shirt',
+        image: '../public/B.jpg',
+        id: 4
+      },
+      {
+        name: 'White Shirt',
+        image: '../public/W.jpg',
+        id: 5
+      },
+      {
+        name: 'Bb Shirt',
+        image: '../public/Bb.jpg',
+        id: 6
+      },
+      {
+        name: 'Red Shirt',
+        image: '../public/R.jpg',
+        id: 7
+      },
+      {
+        name: 'Brown Shirt',
+        image: '../public/Br.jpg',
+        id: 8
+      },
+      { id: 9 }
   ];
 }
 
@@ -74,12 +86,22 @@ function renderProducts(products) {
     div.style.boxShadow = '0 1px 8px #0001';
     div.style.height = '180px';
     div.style.cursor = 'pointer';
-    div.innerHTML = `<img src="${product.image}" alt="${product.name}" style="max-width:120px; max-height:120px; border-radius:8px;" />`;
-    // 첫 번째 셔츠(S.jpg)만 클릭 시 상세페이지로 이동
-    if (product.id === 1) {
-      div.onclick = () => {
-        window.location.href = '../index.html';
-      };
+    if (product.image) {
+      div.innerHTML = `<img src="${product.image}" alt="${product.name || ''}" />`;
+      if (product.id === 1) {
+        div.onclick = () => {
+          window.location.href = '../index.html';
+        };
+      }
+    } else if (product.id === 9) {
+  div.innerHTML = '<span style="color:#888;font-size:1.2rem;font-weight:500;">Coming Soon</span>';
+      div.style.background = '#f0f0f0';
+      div.style.display = 'flex';
+      div.style.justifyContent = 'center';
+      div.style.alignItems = 'center';
+      div.style.cursor = 'default';
+    } else {
+      div.innerHTML = '';
     }
     list.appendChild(div);
   });
