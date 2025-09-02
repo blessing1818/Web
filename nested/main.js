@@ -22,42 +22,42 @@ function getDummyProducts() {
   return [
     {
       name: 'T-Shirt',
-      image: '..\public\S.jpg',
+      image: '../public/S.jpg',
       id: 1
     },
       {
         name: 'Orange Shirt',
-        image: '..\public\O.jpg',
+        image: '../public/O.jpg',
         id: 2
       },
       {
         name: 'Yellow Shirt',
-        image: '..\public\Y.jpg',
+        image: '../public/Y.jpg',
         id: 3
       },
       {
         name: 'Blue Shirt',
-        image: '..\public\B.jpg',
+        image: '../public/B.jpg',
         id: 4
       },
       {
         name: 'White Shirt',
-        image: '..\public\W.jpg',
+        image: '../public/W.jpg',
         id: 5
       },
       {
         name: 'Bb Shirt',
-        image: '..\public\Bb.jpg',
+        image: '../public/Bb.jpg',
         id: 6
       },
       {
         name: 'Red Shirt',
-        image: '..\public\R.jpg',
+        image: '../public/R.jpg',
         id: 7
       },
       {
         name: 'Brown Shirt',
-        image: '..\public\Br.jpg',
+        image: '../public/Br.jpg',
         id: 8
       },
       { id: 9 }
