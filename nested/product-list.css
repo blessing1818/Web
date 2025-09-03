@@ -20,18 +20,20 @@
 .product-list-grid .product-thumb {
   aspect-ratio: 1 / 1;
   width: 100%;
+  height: 100%;
   min-width: 0;
   min-height: 0;
+  display: block;
 }
 .product-thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 1px 8px #0001;
   cursor: pointer;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .product-thumb img {
   width: 100%;
