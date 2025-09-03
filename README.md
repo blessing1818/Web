@@ -12,3 +12,4 @@
 ![data.jpg](https://github.com/blessing1818/Web/blob/main/data.jpg)
 
 https://willowy-axolotl-591600.netlify.app/
+willowy-axolotl-591600.netlify.app
