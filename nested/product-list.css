@@ -24,6 +24,8 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #888;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 /* Product List Responsive Grid */
 .product-list-grid {
