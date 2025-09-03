@@ -17,50 +17,16 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 
 function getDummyProducts() {
-  // 첫 번째 셔츠, 두 번째 B.jpg 이미지
-  // 9칸(3x3) 그리드, 첫 번째만 셔츠 이미지, 나머지는 빈 칸
   return [
-    {
-      name: 'T-Shirt',
-      image: '../public/S.jpg',
-      id: 1
-    },
-      {
-        name: 'Orange Shirt',
-        image: '../public/O.jpg',
-        id: 2
-      },
-      {
-        name: 'Yellow Shirt',
-        image: '../public/Y.jpg',
-        id: 3
-      },
-      {
-        name: 'Blue Shirt',
-        image: '../public/B.jpg',
-        id: 4
-      },
-      {
-        name: 'White Shirt',
-        image: '../public/W.jpg',
-        id: 5
-      },
-      {
-        name: 'Bb Shirt',
-        image: '../public/Bb.jpg',
-        id: 6
-      },
-      {
-        name: 'Red Shirt',
-        image: '../public/R.jpg',
-        id: 7
-      },
-      {
-        name: 'Brown Shirt',
-        image: '../public/Br.jpg',
-        id: 8
-      },
-      { id: 9 }
+    { name: 'T-Shirt', image: '/S.jpg', id: 1 },
+    { name: 'Orange Shirt', image: '/O.jpg', id: 2 },
+    { name: 'Yellow Shirt', image: '/Y.jpg', id: 3 },
+    { name: 'Blue Shirt', image: '/B.jpg', id: 4 },
+    { name: 'White Shirt', image: '/W.jpg', id: 5 },
+    { name: 'Bb Shirt', image: '/Bb.jpg', id: 6 },
+    { name: 'Red Shirt', image: '/R.jpg', id: 7 },
+    { name: 'Brown Shirt', image: '/Br.jpg', id: 8 },
+    { id: 9 }
   ];
 }
 
