@@ -18,7 +18,10 @@
   padding: 16px 0;
 }
 .product-list-grid .product-thumb {
-  height: 120px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
 }
 .product-thumb {
   display: flex;
@@ -41,7 +44,5 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
   }
-  .product-list-grid .product-thumb {
-    height: 220px;
-  }
+  /* 썸네일은 aspect-ratio로 정사각형 유지 */
 }
