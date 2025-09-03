@@ -6,6 +6,9 @@
 .product-thumb.coming-soon {
   background: #f0f0f0;
   cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Product List Responsive Grid */
 .product-list-grid {
