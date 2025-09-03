@@ -7,6 +7,7 @@
   background: #f0f0f0;
   cursor: default;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -14,6 +15,15 @@
   aspect-ratio: 1 / 1;
   min-width: 0;
   min-height: 0;
+  text-align: center;
+}
+.coming-soon-text {
+  display: block;
+  width: 100%;
+  line-height: 1;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #888;
 }
 /* Product List Responsive Grid */
 .product-list-grid {
